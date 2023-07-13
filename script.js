@@ -66,9 +66,9 @@ function checkAnswer(){
         let selectedAnswer = _options.querySelector('.selected span').textContent;
         if(selectedAnswer.trim() == HTMLDecode(correctAnswer)){
             correctScore++;
-            _result.innerHTML =  `<p> <i class= "fas fa-check"></i>Correct Answer! </p>`;
+            _result.innerHTML =  `<p> <i class= "fas fa-check"></i>Felicidades, respuesta correcta! </p>`;
         }else{
-            _result.innerHTML = `<p> <i class= "fas fa-times"></i>Inorrect Answer! </p> <p><small> <b>Correct Answer: </b> ${correctAnswer} </small></p>`;
+            _result.innerHTML = `<p> <i class= "fas fa-times"></i>Lo siento, respuesta incorrecta! </p> <p><small> <b>La respuesta correcta es: </b> ${correctAnswer} </small></p>`;
         }
         checkCount();
     }else{
